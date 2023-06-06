@@ -7,7 +7,7 @@
 
 extern struct ghost g1;
 int main(void){
-    ghost_init(g1);
+    ghost_init(&g1);
     render(g1);
     
     while(1){
@@ -15,5 +15,5 @@ int main(void){
         if ( key == 'q') break;
         movement_pacman(key);
     }
+    // render_checker(g1);
 }
-    

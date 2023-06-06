@@ -12,7 +12,6 @@ void movement_pacman(int key){
         case 'w':
             // code for arrow up
             move_up();
-            ghost_up(g1);
             system("cls");
             render(g1);
             break;

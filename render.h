@@ -4,6 +4,9 @@
 #include "pacman.h"
 #include "ghost.h"
 
+void render_checker(struct ghost g1){
+    printf("%d, %d",g1.x, g1.y );
+}
 
 void render(struct ghost g1){
 
