@@ -16,3 +16,4 @@ the controls are simple
 
 <h1> TO DO </h1>
 make the ghost move automatically in random direction
+fix the ghost getting stuck after sometime 
