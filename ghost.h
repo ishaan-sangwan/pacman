@@ -6,13 +6,14 @@
 struct ghost{
     int x;
     int y;
-
     
 };
 
-void ghost_up(struct ghost* g){
-    if (gameMap[g->y][g->x] != 1){
-        (g->y)--;
+struct ghost g1;
+
+void ghost_up(struct ghost g){
+    if (gameMap[g.y][g.x] != 1){
+        (g.y)--;
     }
 }
 
@@ -41,6 +42,9 @@ int* ghost_locator(struct ghost* g){
     return ghost_coord;
 }
 
-
+void ghost_init(struct ghost g){
+    g.x = 8;
+    g.y = 8;
+}
 
 #endif

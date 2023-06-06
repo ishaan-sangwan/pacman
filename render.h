@@ -5,10 +5,7 @@
 #include "ghost.h"
 
 
-void render(){
-    struct ghost g1;
-    g1.x = 8;
-    g1.y = 8;
+void render(struct ghost g1){
 
     for ( int i =0 ; i <10; i++){
         for (int j = 0; j < 10 ; j++){
