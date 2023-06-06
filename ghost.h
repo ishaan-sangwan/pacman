@@ -22,6 +22,18 @@ void ghost_down(struct ghost* g){
     }
 }
 
+void ghost_left(struct ghost* g){
+    if ( gameMap[g->y][g->x] != 1){
+        (g->x)++;
+    }
+}
+
+void ghost_right(struct ghost* g){
+    if (gameMap[g->y][g->x] != 1){
+        (g->x)++;
+    }
+}
+
 int* ghost_locator(struct ghost* g){
     int* ghost_coord = (int*)malloc(2*sizeof(int));
     ghost_coord[0] = g->x;
