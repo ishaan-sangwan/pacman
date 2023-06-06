@@ -14,6 +14,8 @@ int main(void){
         char key = getch();
         if ( key == 'q') break;
         movement_pacman(key);
+        int* coord = ghost_locator(&g1);
+        printf("%d, %d", coord[0], coord[1]);
     }
-    // render_checker(g1);
+    
 }

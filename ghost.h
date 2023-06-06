@@ -18,19 +18,19 @@ void ghost_up(struct ghost* g){
 }
 
 void ghost_down(struct ghost* g){
-    if (gameMap[g->y][g->x] != 1){
+    if (gameMap[g->y +1][g->x] != 1){
         (g->y)++;
     }
 }
 
 void ghost_left(struct ghost* g){
-    if ( gameMap[g->y][g->x] != 1){
-        (g->x)++;
+    if ( gameMap[g->y][g->x -1] != 1){
+        (g->x)--;
     }
 }
 
 void ghost_right(struct ghost* g){
-    if (gameMap[g->y][g->x] != 1){
+    if (gameMap[g->y][g->x +1] != 1){
         (g->x)++;
     }
 }
