@@ -9,3 +9,10 @@ the controls are simple
  - A for left
  - D for right
  -
+
+
+
+------------------------------------------
+
+<h1> TO DO </h1>
+make the ghost move automatically in random direction
